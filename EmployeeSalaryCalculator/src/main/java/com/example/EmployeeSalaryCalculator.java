@@ -59,15 +59,17 @@ public class EmployeeSalaryCalculator
 				if(HW <= standardWorkingHours)
 				{
 					//YOUR CODE STARTS HERE
-					 
+					 grossSalary = HW * HR;
 
 					//YOUR CODE ENDS HERE
 				}
 				else
 				{
 					//YOUR CODE STARTS HERE
- 
+					int bassSalary = 40 *HR;
+					HW = HW -40;
 
+					grossSalary = (HW * (HR*2))+ bassSalary;
 					//YOUR CODE ENDS HERE
 				}
 				return grossSalary;
